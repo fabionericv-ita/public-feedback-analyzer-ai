@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-textblob
-pydantic
-beautifulsoup4
-requests
-deep-translator
-nltk
-python-multipart
