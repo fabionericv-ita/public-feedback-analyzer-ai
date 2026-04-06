@@ -74,7 +74,8 @@ function App() {
     setCaricamento(true);
     
     try {
-      const response = await axios.get(`http://127.0.0.1:8000/analizza`, { 
+      // Modificato per puntare al prefisso configurato su Vercel
+      const response = await axios.get(`/_/backend/analizza`, { 
         params: { 
           testo: testo, 
           context: systemPrompt, 
