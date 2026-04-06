@@ -1,3 +1,9 @@
 fastapi
 uvicorn
 textblob
+pydantic
+requests
+deep-translator
+beautifulsoup4
+python-multipart
+nltk
