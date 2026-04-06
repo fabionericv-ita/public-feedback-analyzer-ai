@@ -30,7 +30,7 @@ export default function Info() {
       width: '100%', 
       minHeight: '100vh', 
       backgroundColor: '#f8f9fa', 
-      padding: '40px' 
+      padding: '0px' 
     }}>
       
       {/* HEADER CENTRATO (Come Analytics) */}
