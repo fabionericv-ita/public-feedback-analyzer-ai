@@ -1,0 +1,129 @@
+/* src/styles/header.css */
+
+.header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 40px; 
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Allineamento orizzontale tra l'icona logo e il blocco testi */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Contenitore per Titolo e Sottotitolo uno sopra l'altro */
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title { 
+  font-size: 1.8rem; 
+  font-weight: 800; 
+  color: #1a202c;
+  margin: 0; 
+  padding: 0;
+  line-height: 1.1; 
+}
+
+.title-icon { 
+  font-size: 36px !important; 
+  color: #1a202c; 
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px; 
+  line-height: 1;
+}
+
+.tech-tag {
+  background-color: #edf2f7;
+  color: var(--brand-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.header-right { 
+  display: flex; 
+  flex-direction: row; 
+  gap: 20px; 
+}
+
+/* --- NAV ITEM BASE --- */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: #718096;
+  cursor: pointer;
+  padding: 8px 12px; /* Leggermente aumentata per il background active */
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  min-width: 75px;
+}
+
+.nav-item .material-symbols-outlined { 
+  font-size: 32px !important; 
+  transition: color 0.2s;
+}
+
+.nav-item span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --- STATO ACTIVE: Sfondo bianco e colore brand --- */
+.nav-item.active {
+  background-color: #ffffff;
+  color: var(--brand-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-item.active .material-symbols-outlined {
+  color: var(--brand-color);
+}
+
+/* --- HOVER SOLO PER NON ATTIVI --- */
+.nav-item:hover:not(.active) {
+  color: var(--brand-color);
+  background-color: #edf2f7;
+}
+
+/* --- TECH STACK INFO --- */
+.tech-stack-info {
+  margin-top: -30px; 
+  margin-bottom: 30px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-left: 4px solid var(--brand-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+  text-align: left;
+}
+
+.tech-stack-info p {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #4a5568;
+}

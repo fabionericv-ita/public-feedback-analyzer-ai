@@ -1,0 +1,98 @@
+/* src/styles/sidebar.css */
+
+.sidebar { 
+  background-color: #f9f9f9; 
+  padding: 15px 20px; 
+  border-radius: 16px; 
+  border: 1px solid #eee;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 13px;
+  color: #1a202c;
+  text-align: left; /* Allineamento titolo a sinistra */
+}
+
+/* Fix per l'icona "Cronologia" nel titolo */
+.sidebar-title .material-symbols-outlined {
+  font-size: 28px !important; /* Icona titolo più grande */
+  font-weight: 300;
+}
+
+.history-item { 
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 15px; 
+  padding: 20px; 
+  background-color: #fff; 
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 12px;
+  /* CAMBIO: align-items da center a flex-start per evitare che l'icona 
+     si sposti al centro se il testo diventa molto lungo */
+  align-items: flex-start; 
+  text-align: left;
+  height: auto; /* Assicura che la card cresca con il testo */
+}
+
+/* --- GESTIONE ICONE SENTIMENT (Più Grandi) --- */
+.sentiment-icon .material-symbols-outlined { 
+  font-family: 'Material Symbols Outlined' !important;
+  font-size: 36px !important; /* Ingrandita da 28px a 36px */
+  font-weight: 300 !important;
+}
+
+/* Colori dinamici basati sul sentiment */
+.sentiment-icon.positivo { color: #48bb78; }
+.sentiment-icon.negativo { color: #f56565; }
+
+/* --- CONTENUTO TESTUALE --- */
+.history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start; /* Allinea testi a sinistra internamente */
+}
+
+.history-sentiment-label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.history-text {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.4;
+  /* AGGIUNTE PER EVITARE TRONCAMENTO */
+  white-space: normal;    /* Permette l'andata a capo automatica */
+  word-break: break-word; /* Rompe le parole troppo lunghe se necessario */
+  overflow: visible;      /* Forza la visibilità di tutto il testo */
+  display: block;         /* Assicura il comportamento a blocco */
+}
+
+/* --- TASTI AZIONE (Cestino e Commento) --- */
+.action-btn {
+  background-color: #f1f3f7; /* Grigino chiaro [cite: 2026-03-21] */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.action-btn .material-symbols-outlined { 
+  font-family: 'Material Symbols Outlined' !important;
+  font-size: 24px !important; /* Ingrandita da 20px a 24px */
+  color: var(--brand-color); /* Colore #616a97 [cite: 2026-03-21] */
+  font-weight: 300 !important;
+}

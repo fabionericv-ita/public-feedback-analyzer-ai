@@ -1,0 +1,24 @@
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f4f7f6;
+  --brand-color: #616a97;
+  --bg-card: #ffffff;
+  --text-main: #333;
+  --text-light: #718096;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: 300; /* Tratto sottile */
+  font-display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-small-left {
+  font-size: 0.85rem; /* Rende il testo più piccolo (circa 13-14px) */
+  text-align: left;    /* Allinea a sinistra */
+  color: #718096;      /* Opzionale: un grigio per renderlo meno pesante visivamente */
+  margin-top: 10px;    /* Opzionale: distanzia leggermente dal grafico */
+}

@@ -1,2 +1,13 @@
-# public-feedback-analyzer-ai
-Sistema Full-Stack per l'analisi del sentiment dei feedback cittadini nella PA. Frontend in React, Backend in Python (FastAPI) con integrazione NLP/AI.
+# PA Feedback Hub 🏛️
+
+Un sistema intelligente per l'analisi del sentiment e la gestione dei feedback dei cittadini.
+
+## 🚀 Tech Stack
+- **Frontend:** React 18, Vite, Chart.js
+- **Backend:** Python (FastAPI), TextBlob for NLP
+- **DevOps:** Docker Ready
+
+## 🛠️ Funzionalità
+- Analisi automatica del sentiment con logiche specifiche per la PA.
+- Dashboard analitica con grafici interattivi.
+- Esportazione dati e reportistica annuale.
